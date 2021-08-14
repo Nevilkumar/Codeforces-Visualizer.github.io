@@ -1,0 +1,107 @@
+@import url("../Navbar/Navbar.css");
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Itim', cursive;
+    background-color: #121212;
+}
+
+#tag{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+.version{
+    font-size: 23px;
+    border: 3px solid var(--blue);
+    border-radius: 4px;
+    width: 110px;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.contests{
+    padding: 10px;
+    background-color: var(--gray);
+    color: rgb(0, 89, 255);
+    color: var(--blue);
+    border-radius: 8px;
+    margin: 10px;
+
+}
+.content{
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    text-align: left;
+}
+
+#main a{
+    text-decoration: none;
+    color: var(--blue);
+}
+#tagmain{
+    display: none;
+}
+
+
+#footer{
+    display: flex;
+    justify-content:center;
+    width: 99%;
+    justify-content: center;
+    font-size: 23px;
+    margin-bottom: 10px;
+    display: none;
+}
+#pre,#next{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    margin: 22px 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 23px;
+}
+#pre{
+    background: #1488CC;  
+    background: -webkit-linear-gradient(to left, #2B32B2, #1488CC);  
+    background: linear-gradient(to left, #2B32B2, #1488CC); 
+}
+#next{
+    background: #1488CC;  
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC); 
+    background: linear-gradient(to right, #2B32B2, #1488CC); 
+
+}
+#pre:hover{
+    box-shadow: inset -150px 0px 0px 0px  #2B32B2;
+    transition: all 0.4s ease-out;
+}
+#next:hover{
+    box-shadow: inset 150px 0px 0px 0px  #2B32B2;
+    transition: all 0.4s ease-out;
+}
+@media only screen and (max-width: 1000px){
+    .version{
+        font-size: 18px;
+        width: 85px;
+    }
+    #tag{
+        padding-top: 15px;
+    }
+    .content{
+        font-size: 20px;
+    }
+    #pre:hover{
+        box-shadow: inset 0px 0px 0px 0px white;
+    }
+    #next:hover{
+        box-shadow: inset 0px 0px 0px 0px white;
+    }
+}

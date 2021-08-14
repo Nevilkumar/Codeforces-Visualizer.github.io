@@ -1,0 +1,158 @@
+@import url("../Navbar/Navbar.css");
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Itim', cursive;
+    background-color: #121212;
+}
+
+.title1{
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+}
+
+.title{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#searchbar{
+    padding-top:100px;
+    width:100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#inputvalue{
+    margin-bottom:15px;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    width: 300px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border:4px solid black;
+}
+#search{
+    margin-bottom: 5px;
+    height: 45px;
+    width: 200px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    font-family: 'Itim', cursive;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    background: #9CECFB;  
+    background: -webkit-linear-gradient(to left, #0052D4, #65C7F7, #9CECFB); 
+    background: linear-gradient(to left, #0052D4, #65C7F7, #9CECFB); 
+}
+#search:hover{
+    transform: scale(1.15);
+    transition: all 0.5s ease;
+}
+
+
+.details{
+    padding: 4px;
+    font-size: 23px;
+}
+.details:nth-child(3){
+    padding-top: 10px;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.con{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding:15px;
+    padding-top: 5px;
+    width: 480px;
+    max-width: 480px;
+    margin:20px;
+}
+#main{
+    display: none;
+}
+
+
+/* for unsolved questions */
+#ques-cont{
+    width: 1000px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    margin:18px auto;
+    padding:3px 20px;
+    padding-bottom: 15px;
+    font-size: 23px;
+    display: none;
+}
+#ques-cont a{
+    text-decoration: none;
+    color: var(--blue);
+}
+#ques{
+    display: flex;
+    flex-wrap: wrap;
+}
+#graph{
+    width: 648px;
+    align-items: center;   
+    margin: auto;
+    padding: 15px;
+    display: none;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 1000px){
+
+    #searchbar{
+        padding-top:40px;
+    }
+
+    #search:hover{
+        transform: scale(1);
+        transition: all 0.5s ease;
+    }
+
+    #content{
+        flex-wrap: wrap;
+    }
+    .details{
+        font-size: 20px;
+    }
+    .con{
+        padding:20px;
+        padding-top: 5px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    #ques-cont{
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-size: 20px;
+        width: 90%;
+    }
+    #graph{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+}
