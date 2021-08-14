@@ -280,7 +280,7 @@ function makegraph(){
             title:{
                 display:true,
                 text:'Number of solved problems',
-                fontColor:'rgb(0, 89, 255)'
+                fontColor:'rgb(51, 122, 241)'
             }
         }
     });
